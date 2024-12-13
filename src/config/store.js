@@ -11,6 +11,7 @@ import { mentorSessionReducer } from "../features/mentor/middleware/mentorSessio
 import { mentorTeamReducer } from "../features/mentor/middleware/mentorTeamSlice"
 import { mentorProfileReducer } from "../features/mentor/middleware/mentorProfileSlice";
 import { batchReducer } from "../features/admin/middleware/batchSlice";
+import counterReducer from "../features/task/taskSlice"
 
 
 const confStore = configureStore({
@@ -26,6 +27,7 @@ const confStore = configureStore({
         mentorTeam: mentorTeamReducer,
         mentorProfile: mentorProfileReducer,
         batch: batchReducer,
+        counter : counterReducer,
     },
 
 });
